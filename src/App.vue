@@ -11,7 +11,7 @@ const chessBoardRef = ref<InstanceType<typeof Chessboard> | null>(null)
 onMounted(() => {
   const board = chessBoardRef.value
   if (board) {
-    board.alterPosition(puzzles[0])
+    board.alterPosition(puzzles[0]);
   }
 })
 function incrementPuzzleIndex() {
